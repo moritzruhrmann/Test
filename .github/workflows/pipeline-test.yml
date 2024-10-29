@@ -17,7 +17,7 @@ jobs:
       - name: PowerShell Ausführungsrichtlinie setzen
         run: | 
           Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
-        shell: pwsh    
+        shell: powershell    
       # Schritt 3: Node.js-Skript ausführen
       - name: Node.js Skript ausführen
         run: node calc.js
