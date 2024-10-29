@@ -21,3 +21,16 @@ jobs:
 
     - name: Datei anzeigen
       run: type pipeline_test.txt
+
+  run-node-script:
+    runs-on: self-hosted
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v3
+
+      - name: Installiere Node.js
+        uses: actions/setup-node@v3
+
+      -name: Node.js Skript ausführen
+       uses: node calc.js
