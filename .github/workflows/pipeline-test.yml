@@ -9,19 +9,7 @@ on:
       - master
 
 jobs:
-  create-file:
-    runs-on: self-hosted
-
-    steps:
-    - name: Repository auschecken
-      uses: actions/checkout@v3
-
-    - name: Erstelle Textdatei
-      run: echo "Die Pipeline funktioniert" > test-pipeline.txt
-
-    - name: Datei anzeigen
-      run: type pipeline_test.txt
-
+  
   run-node-script:
     runs-on: self-hosted
 
