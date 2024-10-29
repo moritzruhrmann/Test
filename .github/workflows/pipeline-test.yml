@@ -13,16 +13,7 @@ jobs:
     runs-on: self-hosted  # Oder windows-latest, falls der Runner auf Windows läuft
 
     steps:
-      # Schritt 1: Repository auschecken
-      - name: Repository auschecken
-        uses: actions/checkout@v3
-
-      # Schritt 2: Node.js installieren
-      - name: Installiere Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'  # Du kannst auch eine andere Version verwenden
-
+          
       # Schritt 3: Node.js-Skript ausführen
       - name: Node.js Skript ausführen
         run: node calc.js
