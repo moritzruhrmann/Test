@@ -13,11 +13,7 @@ jobs:
     runs-on: self-hosted  # Oder windows-latest, falls der Runner auf Windows läuft
 
     steps:
-
-      - name: PowerShell Ausführungsrichtlinie setzen
-        run: | 
-          Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
-        shell: powershell    
+    
       # Schritt 3: Node.js-Skript ausführen
       - name: Node.js Skript ausführen
         run: node calc.js
