@@ -10,14 +10,14 @@ on:
 
 jobs:
   create-file:
-    runs-on: windows-latest
+    runs-on: self-hosted
 
     steps:
     - name: Repository auschecken
       uses: actions/checkout@v3
 
     - name: Erstelle Textdatei
-      run: echo "Die Pipeline funktioniert" > pipeline_test.txt
+      run: echo "Die Pipeline funktioniert" > test-pipeline.txt
 
     - name: Datei anzeigen
       run: type pipeline_test.txt
